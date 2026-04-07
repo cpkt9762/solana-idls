@@ -1,0 +1,58 @@
+{
+  "version": "0.1.0",
+  "name": "jupiter_lend",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "sourceTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "destinationTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "minimumAmountOut",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 1
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9",
+    "name": "jupiter_lend",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9"
+}

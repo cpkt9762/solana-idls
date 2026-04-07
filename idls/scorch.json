@@ -1,0 +1,131 @@
+{
+  "version": "0.1.0",
+  "name": "scorch",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "prependAcct",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "swapAcct0",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sourceTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "destinationTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultSrc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultDst",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "sourceMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "destinationMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramSrc",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramDst",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "memoProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "programId",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "hardcoded3",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "pdaA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pdaB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "swapId",
+          "type": "u128"
+        },
+        {
+          "name": "direction",
+          "type": "u8"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "otherAmountThreshold",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 2
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch",
+    "name": "scorch",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "ojh19ojaKduoJZuaJADhcVGp4xt1TcdAvZmpVsCorch"
+}

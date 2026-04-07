@@ -1,0 +1,92 @@
+{
+  "version": "0.1.0",
+  "name": "zerofi",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "program",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pda2",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pda3",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pda4",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pda5",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "sourceTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "destinationTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "otherAmountThreshold",
+          "type": "u64"
+        },
+        {
+          "name": "swapFlag",
+          "type": "u8"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 6
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+    "name": "zerofi",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY"
+}

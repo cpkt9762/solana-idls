@@ -1,0 +1,109 @@
+{
+  "version": "0.1.0",
+  "name": "aquifer",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "tokenProgramDst",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "dstAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "dstMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramSrc",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "srcAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "srcMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "seedAccount",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "quoteDst",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "quoteSrc",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "coinDst",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "dstVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "coinSrc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "srcVault",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 1
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45",
+    "name": "aquifer",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45"
+}

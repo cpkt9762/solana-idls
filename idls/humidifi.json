@@ -1,0 +1,86 @@
+{
+  "version": "0.1.0",
+  "name": "humidifi",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "accountA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "accountB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "baseAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "quoteAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "swapIdXored",
+          "type": "u64"
+        },
+        {
+          "name": "amountXored",
+          "type": "u64"
+        },
+        {
+          "name": "directionXored",
+          "type": "u64"
+        },
+        {
+          "name": "selector",
+          "type": "u8"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 0
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+    "name": "humidifi",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp"
+}

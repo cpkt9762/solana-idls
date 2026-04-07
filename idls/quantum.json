@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "name": "quantum",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userAtaA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userAtaB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "configPda",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "otherAmountThreshold",
+          "type": "u64"
+        },
+        {
+          "name": "side",
+          "type": "u8"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 7
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv",
+    "name": "quantum",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv"
+}

@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "name": "orca_v2",
+  "instructions": [
+    {
+      "name": "swap",
+      "docs": [
+        "Swap tokens in an Orca V2 pool"
+      ],
+      "accounts": [
+        {
+          "name": "swapState",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "Pool state account"
+          ]
+        },
+        {
+          "name": "poolAuthority",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "Pool authority PDA"
+          ]
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": true,
+          "docs": [
+            "User transfer authority"
+          ]
+        },
+        {
+          "name": "userSource",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "User source token account"
+          ]
+        },
+        {
+          "name": "poolSourceVault",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "Pool source token vault"
+          ]
+        },
+        {
+          "name": "poolDestinationVault",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "Pool destination token vault"
+          ]
+        },
+        {
+          "name": "userDestination",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "User destination token account"
+          ]
+        },
+        {
+          "name": "poolLpMint",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "Pool LP token mint"
+          ]
+        },
+        {
+          "name": "poolFeeAccount",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "Pool fee account"
+          ]
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "SPL Token program"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "amountIn",
+          "type": "u64"
+        },
+        {
+          "name": "minAmountOut",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 1
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP",
+    "name": "orca_v2",
+    "version": "0.1.0",
+    "spec": "non-anchor",
+    "description": "Orca V2 AMM - Classic constant product AMM"
+  },
+  "address": "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP"
+}

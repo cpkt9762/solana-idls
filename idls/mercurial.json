@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "name": "mercurial",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "poolAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "sourceTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "destinationTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "extraAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userSource",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userDestination",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "minimumAmountOut",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 4
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky",
+    "name": "mercurial",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky"
+}

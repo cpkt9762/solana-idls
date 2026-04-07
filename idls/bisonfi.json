@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "name": "bisonfi",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "program",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userAtaA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userAtaB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramA",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramB",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "otherAmountThreshold",
+          "type": "u64"
+        },
+        {
+          "name": "direction",
+          "type": "u8"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 2
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
+    "name": "bisonfi",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi"
+}

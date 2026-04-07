@@ -1,0 +1,97 @@
+{
+  "version": "0.1.0",
+  "name": "tesserav",
+  "instructions": [
+    {
+      "name": "swap",
+      "accounts": [
+        {
+          "name": "eventAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "pool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTransferAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "pda1",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pda2",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTokenA",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTokenB",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mintA",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "mintB",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramA",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgramB",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "sysvarInstructions",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "side",
+          "type": "u8"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "minimumAmountOut",
+          "type": "u64"
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 16
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "non-anchor",
+    "address": "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH",
+    "name": "tesserav",
+    "version": "0.1.0",
+    "spec": "non-anchor"
+  },
+  "address": "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH"
+}
