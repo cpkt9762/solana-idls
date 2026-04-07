@@ -1,0 +1,320 @@
+{
+  "version": "0.1.0",
+  "name": "stakedex_withdraw_stake",
+  "instructions": [
+    {
+      "name": "SplStakePoolWithdrawStake",
+      "accounts": [
+        {
+          "name": "splStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeSplStakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeValidatorList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeToSplit",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeManagerFee",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 1
+      }
+    },
+    {
+      "name": "LidoWithdrawStake",
+      "accounts": [
+        {
+          "name": "lidoProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeSolido",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeVoter",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeToSplit",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeValidatorList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 2
+      }
+    },
+    {
+      "name": "MarinadeWithdrawStake",
+      "accounts": [
+        {
+          "name": "marinadeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeMarinadeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeMarinadeTreasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeValidatorList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeToSplit",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeDepositAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 3
+      }
+    },
+    {
+      "name": "SanctumSplStakePoolWithdrawStake",
+      "accounts": [
+        {
+          "name": "sanctumSplStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeSplStakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeValidatorList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeToSplit",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeManagerFee",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 4
+      }
+    },
+    {
+      "name": "SanctumSplMultiStakePoolWithdrawStake",
+      "accounts": [
+        {
+          "name": "sanctumSplMultiStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeSplStakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeValidatorList",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeStakeToSplit",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "withdrawStakeManagerFee",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clock",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 5
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "shank",
+    "address": "TH1S1SAV1RTUAL1DLoNLY1XACCoUNTSAREUSED11111"
+  }
+}

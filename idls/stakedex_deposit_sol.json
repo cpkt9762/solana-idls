@@ -1,0 +1,205 @@
+{
+  "version": "0.1.0",
+  "name": "stakedex_deposit_sol",
+  "instructions": [
+    {
+      "name": "MarinadeDepositSol",
+      "accounts": [
+        {
+          "name": "marinadeProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "marinadeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "marinadeLiqPoolSolLeg",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "marinadeLiqPoolMsolLeg",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "marinadeLiqPoolMsolLegAuth",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "marinadeReserve",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "msolMintAuthority",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 0
+      }
+    },
+    {
+      "name": "SplStakePoolDepositSol",
+      "accounts": [
+        {
+          "name": "splStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolReserveStake",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolManagerFee",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 2
+      }
+    },
+    {
+      "name": "SanctumSplStakePoolDepositSol",
+      "accounts": [
+        {
+          "name": "SanctumSplStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolReserveStake",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolManagerFee",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 3
+      }
+    },
+    {
+      "name": "SanctumSplMultiStakePoolDepositSol",
+      "accounts": [
+        {
+          "name": "SanctumSplMultiStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolReserveStake",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolManagerFee",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 4
+      }
+    },
+    {
+      "name": "SplStakePoolDepositCapGuardDepositSol",
+      "accounts": [
+        {
+          "name": "depositCapGuardProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "depositCapGuardState",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "splStakePoolProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePool",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolWithdrawAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolReserveStake",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "stakePoolManagerFee",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 5
+      }
+    }
+  ],
+  "metadata": {
+    "origin": "shank",
+    "address": "TH1S1SAV1RTUAL1DLoNLY1XACCoUNTSAREUSED11111"
+  }
+}
